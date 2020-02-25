@@ -7,14 +7,14 @@ package main
   https://en.wikibooks.org/wiki/Unicode/Character_reference/2000-2FFF
 */
 func main() {
-  const gray = "37" 
-  const lightBlue = "36" 
-  const purple = "35" 
-  const blue = "34" 
-  const yellow = "33" 
-  const green = "32" 
+  const black string = "30" 
   const red = "31" 
-  const black = "30" 
+  const green = "32" 
+  const yellow = "33" 
+  const blue = "34" 
+  const purple = "35" 
+  const lightBlue = "36" 
+  const gray = "37" 
   const pentagon = "\u2B17"
   const hexagon = "\u2B22"
   const circle = "\u2B24"
