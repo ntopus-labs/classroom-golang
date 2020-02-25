@@ -15,7 +15,7 @@ func main() {
   const purple = "35" 
   const lightBlue = "36" 
   const gray = "37" 
-  const pentagon = "\u2B17"
+  const pentagon = "\u2B1F"
   const hexagon = "\u2B22"
   const circle = "\u2B24"
   const elipse = "\u2B2E"
