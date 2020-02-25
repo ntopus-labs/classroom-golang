@@ -25,14 +25,14 @@ func main() {
 	printColoredText(elipse, lightBlue)
 }
 
-func printColoredText(text string , colorCode string ) {
+func printColoredText(text string, colorCode string) {
 	println(mountColoredText(text, colorCode))
 }
 /**
   ANSI escape is what can help us make visual changes
   https://en.wikipedia.org/wiki/ANSI_escape_code
 */
-func mountColoredText(text, colorCode string) string{
+func mountColoredText(text, colorCode string) string {
   CSIColorClear := "\033[0m" 
   CSIColorStart := "\033[1;"+ colorCode +"m"
   return CSIColorStart+text+CSIColorClear
