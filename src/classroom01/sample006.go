@@ -58,11 +58,11 @@ func main() {
 
 func printAllColoredTextInList(textList, colorList [] string) {
   for index := 0; index < len(textList); index++ {
-    printColoredTextForEachColorInList(textList[index], colorList)
+    printExpecificColoredTextForEachColorInList(textList[index], colorList)
   }
 }
 
-func printColoredTextForEachColorInList(text string, colorList []string) {
+func printExpecificColoredTextForEachColorInList(text string, colorList []string) {
 	for _, color := range colorList {
     if text == pentagon {
       if color != yellow { continue }  
