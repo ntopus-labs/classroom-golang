@@ -23,11 +23,16 @@ help: ## This help.
 
 .DEFAULT_GOAL := help
 
-# DOCKER TASKS
-# Build the container
 build: ## Build sample based in classroom ex.: make build c=01 s=001
 ifdef s
 	go build -o ./bin/$(CLASSFOLDER)-$(SAMPLENAME) ./src/$(CLASSFOLDER)/$(SAMPLEFILE)
 else
 	@echo "Please inform a sample file to build. see make help to see an example"
+endif
+
+run: ## Run sample based in classroom ex.: make run c=01 s=001
+ifdef s
+	go run ./src/$(CLASSFOLDER)/$(SAMPLEFILE)
+else
+	@echo "Please inform a sample file to run. see make help to see an example"
 endif
