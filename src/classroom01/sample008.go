@@ -62,6 +62,7 @@ func printIstructions() {
   println("Press S to " + mountColoredText(elipse, purple))
   println("Press A to " + mountColoredText(circle, blue))
   println("Press D to " + mountColoredText(hexagon, red))
+  println("Or press 'Esc' to go out!")
 }
 
 func printSumary(correct, wrong int) {
