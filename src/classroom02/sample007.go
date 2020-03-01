@@ -85,7 +85,7 @@ func printExpecificColoredTextForEachColorInList(text string, colorList []string
         printColoredText(text+" ", c)
         wg.Done() 
       }(color)
-      if text == circle { return }
+      if text == circle { break }
     }
 	}
 }

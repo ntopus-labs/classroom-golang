@@ -76,7 +76,7 @@ func printExpecificColoredTextForEachColorInList(text string, colorList []string
       printColoredText(text+" ", color)
     } else {
       printColoredText(text+" ", color)
-      if text == circle { return }
+      if text == circle { break }
     }
 	}
 }
