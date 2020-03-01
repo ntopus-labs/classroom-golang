@@ -24,14 +24,18 @@ const purple = "35"
 const lightblue = "36"
 const gray = "37"
 
+/**
+  Args Usage
+  https://gobyexample.com/command-line-arguments
+*/
 func main() {
-  colorList := []string {
+  colorList := []string{
     yellow,
-		blue,
+    blue,
     purple,
     gray,
   }
-  textList := []string {
+  textList := []string{
     pentagon,
     elipse,
     hexagon,
@@ -39,7 +43,7 @@ func main() {
   }
   defer println("")
   argsWithoutProg := os.Args[1:]
-	if len(argsWithoutProg)>0 {
+	if len(argsWithoutProg) > 0 {
 		loopTimes, err := strconv.Atoi(argsWithoutProg[0])
 		if err != nil {
       println("Fail to undestand Loop Times Value:")
