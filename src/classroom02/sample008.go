@@ -32,7 +32,6 @@ var keyPressed = make(chan string)
 var possibleLetters = []string{"W", "S", "A", "D"}
 
 func main() {
-  defer println("")
   defer wg.Wait()
   go gameLoop()
   wg.Add(1)
